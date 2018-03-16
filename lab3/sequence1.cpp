@@ -150,7 +150,8 @@ namespace coen79_lab3
 		double ans;
 		
 		for(int i = 0; i < used; i++){
-			squaredSum += (mean1 - (data[i]*data[i])); // calculating squaredSum
+			
+			squaredSum += (data[i]-mean1)*(data[i]-mean1); // calculating squaredSum
 		}
 		
 		ans = squaredSum / (double)used; // taking mean of squaredSum
